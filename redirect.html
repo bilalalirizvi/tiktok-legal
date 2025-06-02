@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>OAuth Redirect Successful</h2>
+    <p>You can now copy the <code>code</code> from the URL bar and continue.</p>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const code = params.get('code');
+      console.log('TikTok Code:', code);
+    </script>
+  </body>
+</html>
